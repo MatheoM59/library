@@ -1,11 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Library</title>
-</head>
-<body>
-    
-</body>
+    <script></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Library</h1>
+      <button id="btnAdd">ajouter un livre</button>
+      <dialog id="dialog">
+        <h2>dialog</h2>
+
+        <form action="">
+          <label>title</label>
+          <input type="text" name="title" id="title" />
+          <label>author</label>
+          <input type="text" name="author" id="author" />
+          <label>pages</label>
+          <input type="number" name="pages" id="pages" />
+          <label>L'avez vous lu ?</label>
+          <input type="checkbox" name="read" id="read" />
+          <input type="submit" id="submit" />
+        </form>
+        <button id="close">Ne rien ajouter</button>
+      </dialog>
+      <div class="library"></div>
+    </div>
+  </body>
 </html>
