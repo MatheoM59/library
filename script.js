@@ -77,9 +77,11 @@ document.getElementById('close').addEventListener('click', () => {
 
 document.getElementById('submit').addEventListener('click', (event) => {
   event.preventDefault();
-  const title = document.getElementById('title').value;
-  const author = document.getElementById('author').value;
-  const pages = document.getElementById('pages').value;
+  const title = document.getElementById('title').value.trim();
+  const author = document.getElementById('author').value.trim();
+  const pages = document.getElementById('pages').value.trim();
+
+  if (!title || !author || !pages) return;
   let read = document.getElementById('read').checked;
   if (read == false) {
     read = 'Pas encore lu';
