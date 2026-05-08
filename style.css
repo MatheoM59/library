@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 28px;
+}
+
 body {
   font-family: sans-serif;
   background: #f0f0f0;
@@ -11,27 +15,27 @@ body {
 }
 
 .content {
-  max-width: 960px;
-  margin: 48px auto;
-  padding: 0 24px;
+  max-width: 1600px;
+  margin: 84px auto;
+  padding: 0 42px;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 42px;
 }
 
 /* --- Bouton ajouter --- */
 #btnAdd {
-  padding: 10px 20px;
+  padding: 17px 35px;
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 14px;
   cursor: pointer;
   font-size: 0.9rem;
-  margin-bottom: 32px;
+  margin-bottom: 56px;
 }
 
 #btnAdd:hover {
@@ -42,23 +46,23 @@ h1 {
 .library {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 35px;
 }
 
 .library > div {
   background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 17px;
+  padding: 35px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
 }
 
 .library h2 {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .library p {
@@ -68,12 +72,12 @@ h1 {
 
 /* --- Boutons des cartes --- */
 .library .delete {
-  margin-top: 12px;
-  padding: 8px 12px;
+  margin-top: 21px;
+  padding: 14px 21px;
   background: #fff;
   color: #222;
-  border: 1.5px solid #222;
-  border-radius: 6px;
+  border: 2.5px solid #222;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 0.8rem;
 }
@@ -84,11 +88,11 @@ h1 {
 }
 
 .library .status {
-  padding: 8px 12px;
+  padding: 14px 21px;
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 0.8rem;
 }
@@ -100,10 +104,10 @@ h1 {
 /* --- Dialog --- */
 dialog {
   border: none;
-  border-radius: 12px;
-  padding: 32px;
-  width: 360px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 21px;
+  padding: 56px;
+  width: 630px;
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.12);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -111,23 +115,23 @@ dialog {
 }
 
 dialog h2 {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   font-size: 1.2rem;
 }
 
 dialog label {
   display: block;
   font-size: 0.85rem;
-  margin: 14px 0 4px;
+  margin: 24px 0 7px;
   color: #444;
 }
 
 dialog input[type='text'],
 dialog input[type='number'] {
   width: 100%;
-  padding: 9px 10px;
-  border: 1.5px solid #ddd;
-  border-radius: 6px;
+  padding: 16px 17px;
+  border: 2.5px solid #ddd;
+  border-radius: 10px;
   font-size: 0.875rem;
   outline: none;
 }
@@ -138,13 +142,13 @@ dialog input[type='number']:focus {
 }
 
 dialog input[type='submit'] {
-  margin-top: 20px;
+  margin-top: 35px;
   width: 100%;
-  padding: 10px;
+  padding: 17px;
   background: #222;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 14px;
   cursor: pointer;
   font-size: 0.9rem;
 }
@@ -154,12 +158,12 @@ dialog input[type='submit']:hover {
 }
 
 #close {
-  margin-top: 10px;
+  margin-top: 17px;
   width: 100%;
-  padding: 9px;
+  padding: 16px;
   background: none;
-  border: 1.5px solid #ddd;
-  border-radius: 8px;
+  border: 2.5px solid #ddd;
+  border-radius: 14px;
   cursor: pointer;
   color: #666;
   font-size: 0.875rem;
