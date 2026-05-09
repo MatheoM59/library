@@ -1,19 +1,19 @@
 // --- Données ---
 let bookCollection = [];
 
-// --- Constructeur ---
-function Book(id, title, author, pages, read) {
-  this.id = id;
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+// --- Class ---
+class Book {
+  constructor(id, title, author, pages, read) {
+    this.id = id;
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+  toggleRead() {
+    this.read = this.read === 'Lu' ? 'Pas encore lu' : 'Lu';
+  }
 }
-
-// --- Prototype ---
-Book.prototype.toggleRead = function () {
-  this.read = this.read === 'Lu' ? 'Pas encore lu' : 'Lu';
-};
 
 // --- Fonctions ---
 function addBookToLibrary(title, author, pages, read) {
